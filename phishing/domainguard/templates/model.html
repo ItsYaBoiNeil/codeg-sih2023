@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% block title %} Model {% endblock %}
+{% block content %}
+<p>Enter URL Below</p>
+{% csrf_token %}
+<input id="input-url" type="url" class="input-url" placeholder="URL" required>
+{% endblock %}

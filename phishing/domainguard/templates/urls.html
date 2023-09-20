@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<h1>Submitted URLs</h1>
+<ul>
+    {% for url in URLs %}
+    <li>
+        {{url.url}} {{ url.output}}: {% if output.false %}Not Run Yet{% else %}Predictions Done{% endif %}
+    </li>
+    {% endfor %}
+</ul> 
+{% endblock %}
