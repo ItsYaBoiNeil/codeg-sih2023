@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block title %} Model {% endblock %}
+{% block content %}
+<form action="result">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <input class="form-control" placeholder="URL" required type="text" name="url">
+    </div>
+
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+  </form>
+{% endblock %}
